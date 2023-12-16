@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\LanguageController;
 use Illuminate\Support\Facades\Route;
 
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +18,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::post('/search', function (Request $request) {
+    $data = [
+        'searchText' => $request->searchText,
+        'searchPrefix' => $request->searchPrefix,
+        'searchFilter' => $request->searchFilter
+    ];
+    session()->flash('data', $data);
+    return redirect()->back();
+})->name('search');
+
+Route::get('/setLang/{locale}', [LanguageController::class, 'changeLanguage'])->name('setLang');
