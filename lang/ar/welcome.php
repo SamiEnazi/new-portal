@@ -2,7 +2,7 @@
 // ''=>'',
 return [
     'searchFilter' => [
-        'all_sources' => 'كل المصادر',
+        'allSources' => 'كل المصادر',
         'ebooks' => 'الكتب الإلكترونية',
         'ejournals' => 'المجلات الإلكترونية',
         'gscholar' => 'Google Scholar',

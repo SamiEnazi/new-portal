@@ -1,4 +1,4 @@
-<div id="searchWidget" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+<div id="searchWidget">
     <form action="{{ route('search') }}" method="POST">
         {{ csrf_field() }}
         <div id="searchBox" class="flex w-full h-20 text-3xl">
@@ -6,7 +6,7 @@
             <div class='relative'>
                 <select name="searchFilter" id="searchFilter"
                     class="appearance-none h-full border border-gray-300 p-2 pe-10 rounded-md focus:outline-none focus:border-blue-500">
-                    <option value="all">{{ __('welcome.searchFilter.all_sources') }}</option>
+                    <option value="all">{{ __('welcome.searchFilter.allSources') }}</option>
                     <option value="ebooks">{{ __('welcome.searchFilter.ebooks') }}</option>
                     <option value="ejhournals">{{ __('welcome.searchFilter.ejournals') }}</option>
                     <option value="gscholar">{{ __('welcome.searchFilter.gscholar') }}</option>
