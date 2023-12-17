@@ -1,5 +1,5 @@
 <div class="bg-[#2666ab]">
-    <div class="container mx-auto flex justify-between items-center text-white">
+    <div class="container mx-auto flex justify-between items-center text-white ">
         <ul class="flex gap-3">
             <li class="hover:bg-blue-100 hover:text-black  p-3"><a href="#">{{ __('nav.home') }}
             </li>
