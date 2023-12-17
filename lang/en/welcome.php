@@ -1,7 +1,7 @@
 <?php
 return [
     'searchFilter' => [
-        'all_sources' => 'All Resources',
+        'allSources' => 'All Resources',
         'ebooks' => 'E-Books',
         'ejournals' => 'E-Journals',
         'gscholar' => 'Google Scholar',

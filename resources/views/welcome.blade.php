@@ -3,7 +3,7 @@
 
 @section('content')
     <div>
-        <img class="w-[100%]" alt="SDL" src="{{ asset('imgs/Header2.png') }}" />
+        <img class="w-[100%] -z-10" alt="SDL" src="{{ asset('imgs/Header2.png') }}" />
         @include('components.searchBox')
 
         @php

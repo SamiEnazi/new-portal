@@ -9,11 +9,7 @@
     <link rel="icon" href="{{ asset('imgs/favicon.gif') }}" type="text/css" media="screen"> <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ asset('node_modules/@fortawesome/fontawesome-free/css/all.min.css') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-
-
 
 </head>
 
@@ -23,6 +19,7 @@
 
     @yield('content')
     @yield('scripts')
+    
 </body>
 
 </html>
