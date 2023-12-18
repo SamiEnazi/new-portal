@@ -5,7 +5,7 @@
     <div>
         <img class="w-[100%] -z-10" alt="SDL" src="{{ asset('imgs/Header2.png') }}" />
         @include('components.searchBox')
-
+        @include('components.searchCategories')
         @php
             // Retrieve the flashed data from the session
             $flashedData = session('data');

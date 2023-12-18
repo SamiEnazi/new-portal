@@ -1,7 +1,7 @@
 <div id="searchWidget" class="p-3">
     <form action="{{ route('search') }}" method="POST">
         {{ csrf_field() }}
-        <div id="searchBox" class="flex w-full h-20 text-3xl ">
+        <div id="searchBox" class="flex w-full h-20 text-lg lg:text-3xl ">
             <div class='relative'>
                 <select name="searchFilter" id="searchFilter"
                     class="appearance-none h-full border-2 rounded-s-xl  p-2 pe-10  focus:outline-none focus:border-gray-500">
@@ -37,6 +37,6 @@
             </button>
         </div>
     </form>
-    <p class="text-2xl text-blue-500"><a href="#" target="_blank"
+    <p class="text-2xl text-blue-500 p-4"><a href="#"
             rel="noopener noreferrer">{{ __('welcome.advancedSearch') }}</a></p>
 </div>
